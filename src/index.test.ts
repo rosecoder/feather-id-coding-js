@@ -16,6 +16,7 @@ describe("coding", () => {
     expect(encode(5315863842390016)).toEqual("Iui00")
     expect(encode(5673428107395072)).toEqual("K9-Fh")
     expect(encode(5906524572483584)).toEqual("K_-Fh")
+    expect(encode(4546031362506752)).toEqual("G9fTeW0.")
   })
   it("should throw on negative", () => {
     expect(() => encode(-1)).toThrow()
@@ -36,5 +37,7 @@ describe("coding", () => {
     expect(decode("Iui00")).toEqual(5315863842390016)
     expect(decode("K9-Fh")).toEqual(5673428107395072)
     expect(decode("K_-Fh")).toEqual(5906524572483584)
+    expect(decode("G9fTeW000~")).toEqual(4546031362506752)
+    expect(decode("G9fTeW0.")).toEqual(4546031362506752)
   })
 })
