@@ -5,7 +5,7 @@ Lightweight encoding and decoding for numberized ids to shorter url-approved str
 ## Usage
 
 ```
-import { encode, decode } from "number-id-coding"
+import { encode, decode } from "feather-id-coding"
 
 const a = encode(5719739598897152)
 // a is "KKXAd"
