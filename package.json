@@ -1,6 +1,6 @@
 {
   "name": "feather-id-coding",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Encode and decoding for number ids.",
   "author": "Gustaf Rosenblad",
   "license": "ISC",
